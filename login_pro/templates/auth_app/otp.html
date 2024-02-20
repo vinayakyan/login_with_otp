@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .center{
+            margin:auto;
+            width:20%;
+            padding:10px;
+            border:3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h2 style="color:skyblue;text-align:center;"><strong><i>OTP</i></strong></h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="otp">OTP :</label>
+            <input type="number" name="form_otp" id="otp">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
